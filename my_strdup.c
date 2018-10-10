@@ -5,8 +5,6 @@
 ** Task01
 */
 
-#include <stdlib.h>
-
 int strlen(char const *str)
 {
     int nbr = 0;
