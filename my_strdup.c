@@ -5,21 +5,13 @@
 ** Task01
 */
 
-int strlen(char const *str)
-{
-    int nbr = 0;
-
-    while(str[nbr] != '\0') {
-        nbr = nbr + 1;
-    }
-    return (nbr);
-}
+#include<stdlib.h>
 
 char *my_strdup(char const *src)
 {
     char *src_cpy;
     int nbr = 0;
-    int my_length = strlen(src);
+    int my_length = my_strlen(src);
 
     src_cpy = malloc(sizeof(char) * my_length);
     while(src[nbr] != '\0'){
