@@ -6,7 +6,6 @@
 */
 
 #include<stdlib.h>
-#include "libmy.a"
 
 int my_show_word_array(char * const *tab)
 {
