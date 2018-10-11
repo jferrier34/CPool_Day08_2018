@@ -5,7 +5,8 @@
 ** Task01
 */
 
-#include<stdlib.h>
+#include <stdlib.h>
+#include "libmy.a"
 
 char *my_strdup(char const *src)
 {
@@ -14,9 +15,9 @@ char *my_strdup(char const *src)
     int my_length = my_strlen(src);
 
     src_cpy = malloc(sizeof(char) * my_length);
-    while(src[nbr] != '\0'){
-    src_cpy[nbr] = src[nbr];
-    nbr++;
+    while(src[nbr] != '\0') {
+        src_cpy[nbr] = src[nbr];
+        nbr++;
     }
     src_cpy[nbr] = '\0';
     return (&src_cpy[0]);
