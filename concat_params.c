@@ -5,8 +5,6 @@
 ** Task02
 */
 
-#include <stdlib.h>
-
 char *concat_params(int argc, char **argv)
 {
     char *str;
@@ -19,9 +17,13 @@ char *concat_params(int argc, char **argv)
         j = 0;
         while (argv[i][j] != '\0') {
             str[k] = argv[i][j];
-            k = k + 1;
-            j = j + 1;
         }
+	if (argc > i + 1) {
+	    str[i] = '\n';
+	    i = i + 1;
+	    k = k + 1;
+	    
+	}
         str[k - 1] = '\0';
         return (str);
     }
